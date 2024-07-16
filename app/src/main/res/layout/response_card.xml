@@ -1,0 +1,67 @@
+<!-- res/layout/response_card.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearCourseCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/groupStyleblack_900_26cornerRadius">
+
+    <TextView
+        android:id="@+id/stuname"
+        style="@style/txtPoppinssemibold14"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.01"
+        android:singleLine="true"
+        android:text=""
+        tools:text="Student Name" />
+
+    <TextView
+        android:id="@+id/assessmentname"
+        style="@style/txtPoppinssemibold14"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.01"
+        android:singleLine="true"
+        android:text=""
+        tools:text="Total Marks:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/innerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_answer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/saveButton"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:paddingBottom="@dimen/_5pxv"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="@dimen/_5pxv"
+        android:singleLine="true"
+        android:text="Save changes"
+        android:textAllCaps="false"
+        style="@style/btnSolidRounded"
+        tools:text="Save changes"/>
+</LinearLayout>

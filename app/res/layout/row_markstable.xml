@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearHeadings"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylecornerRadius_2">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131447"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_15pxh"
+            android:paddingStart="@dimen/_15pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_assg"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_assg"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131447One"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_20pxh"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_obt" style="@style/txtSolid" tools:text="@string/lbl_obt"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131448"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_total" style="@style/txtSolid" tools:text="@string/lbl_total"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131448One"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_19pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_avg" style="@style/txtSolid" tools:text="@string/lbl_avg"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131448Two"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_20pxh"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_min" style="@style/txtSolid" tools:text="@string/lbl_min"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFrame132131448Three"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1pxh"
+            android:layout_weight="0.17" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@string/lbl_max"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl_max"/>
+    </LinearLayout>
+</layout>

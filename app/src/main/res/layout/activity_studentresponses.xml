@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearStudentMarks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    style="@style/groupStylewhite_A700">
+
+    <LinearLayout
+        android:id="@+id/linearColumncoursesinprog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCoursesinprog"
+            style="@style/txtPoppinsbold24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Student Responses"
+            android:textColor="@color/black"
+            tools:text="" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerStudentresponses"
+            itemSpace="@{@dimen/_20pxh}"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/row_studentmarks" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Check_plag_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@android:color/black"
+            android:contentDescription="responses"
+            android:text="Check Plagiarism"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            app:cornerRadius="50dp"
+            android:minWidth="140dp"
+            android:minHeight="48dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Grade_response_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@android:color/black"
+            android:contentDescription="responses"
+            android:text="Grade Response"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            app:cornerRadius="50dp"
+            android:minWidth="140dp"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

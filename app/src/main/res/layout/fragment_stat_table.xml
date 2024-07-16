@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarChartFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statTable"
+        android:background="@android:color/white"
+        android:layout_margin="40dp">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Min"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Max"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mean"
+                android:textColor="@android:color/white"
+                android:padding="7sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Std dev"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/MinScore"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/MaxScore"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+
+            <TextView
+                android:id="@+id/MeanScore"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/Std_Dev"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</FrameLayout>

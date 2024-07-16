@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearStudentMarks"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30pxv"
+        android:layout_marginEnd="@dimen/_17pxh"
+        android:layout_marginStart="@dimen/_17pxh"
+        android:layout_marginTop="@dimen/_50pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumncoursesinprog"
+            android:layout_height="0dp" android:layout_weight="1.0"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCoursesinprog"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/msg_courses_in_prog"
+                style="@style/txtPoppinsbold24" tools:text="@string/msg_courses_in_prog"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerStudentmarks"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="3" tools:listitem="@layout/row_studentmarks"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

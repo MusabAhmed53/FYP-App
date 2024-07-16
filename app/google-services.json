@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "704189410239",
+    "firebase_url": "https://handwritten-autograder-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "handwritten-autograder",
+    "storage_bucket": "handwritten-autograder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704189410239:android:738fd516fd82e9cfba0f0a",
+        "android_client_info": {
+          "package_name": "com.example.prototype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHODjU9no7sQgOdvyDwnbCOXCQ0I5GXao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704189410239:android:65181424211bf84aba0f0a",
+        "android_client_info": {
+          "package_name": "com.handwrittenautograder.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHODjU9no7sQgOdvyDwnbCOXCQ0I5GXao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

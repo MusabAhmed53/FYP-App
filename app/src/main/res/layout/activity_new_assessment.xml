@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameNewAssessment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/groupStylewhite_A700">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearColumnuploadassessme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_55pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                app:contentInsetStart="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearRowuploadassessme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageImagesOne"
+                        android:layout_width="@dimen/_104pxh"
+                        android:layout_height="@dimen/_55pxh"
+                        android:src="@drawable/img_images1"
+                        tools:src="@drawable/img_images1" />
+
+                    <TextView
+                        android:id="@+id/txtUploadAssessme"
+                        style="@style/txtPoppinsbold20"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.66"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/msg_upload_assessme"
+                        tools:text="@string/msg_upload_assessme" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/linearColumnname"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearRowname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3pxh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        style="@style/txtPoppinsbold18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.24"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_name2"
+                        tools:text="@string/lbl_name2" />
+
+                    <EditText
+                        android:id="@+id/etGroupFour"
+                        style="@style/etSolidRounded_2.5"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.76"
+                        android:textSize="15sp"
+                        android:background="@drawable/rectangle_bg_white"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_assessment_name"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_8pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_9pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowtotalmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_45pxv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTotalMarks"
+                        style="@style/txtPoppinsbold18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.37"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_total_marks"
+                        tools:text="@string/lbl_total_marks" />
+
+                    <EditText
+                        android:id="@+id/etGroupTwo"
+                        style="@style/etSolidRounded_2.5"
+                        android:layout_width="340dp"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:background="@drawable/rectangle_bg_white"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_enter_marks"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_6pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCourse"
+                        style="@style/txtPoppinsbold18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.37"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Course:"
+                        tools:text="Course:" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="340dp"
+                        android:layout_height="53dp"
+                        android:ellipsize="end"
+                        android:background="@color/black"
+                        app:layout_constraintEnd_toEndOf = "parent"
+                        app:layout_constraintStart_toStartOf = "parent">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autocCompleteTextView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:text="select course"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowquestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtQuestions"
+                        style="@style/txtPoppinsbold18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_questions"
+                        tools:text="@string/lbl_questions" />
+
+                    <EditText
+                        android:id="@+id/edxQuestions"
+                        style="@style/etSolidRounded_2.5"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bg_white"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:hint="@string/questions"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_6pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+                    <EditText
+                        android:id="@+id/edxQuestionsmarks"
+                        style="@style/etSolidRounded_2.5"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle_bg_white"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:hint="QuestionMarks"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_6pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button"
+                        android:layout_gravity="center"
+                        style="@style/btnSolidRounded_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="40dp"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_6pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingBottom="@dimen/_6pxv"
+                        android:text="Add Question"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpload"
+                    style="@style/btnSolidRounded_4"
+                    android:layout_width="340dp"
+                    android:layout_height="45dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:layout_marginTop="47dp"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_upload"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_upload" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

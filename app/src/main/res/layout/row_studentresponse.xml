@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearCourseCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/groupStyleblack_900_26cornerRadius">
+
+    <TextView
+        android:id="@+id/txtStudentName"
+        style="@style/txtPoppinssemibold14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.01"
+        android:singleLine="true"
+        android:text="Student Name"
+        tools:text="StudentName" />
+    <TextView
+        android:id="@+id/txtresponses"
+        style="@style/txtPoppinssemibold14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.01"
+        android:singleLine="true"
+        android:text="Student Name"
+        tools:text="StudentName" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".NewAssessment"
+            android:exported="false"
+            android:label="@string/title_activity_new_assessment"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:exported="true" />
+        <activity
+            android:name=".StudentStartup"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorStartup"
+            android:exported="true" />
+        <activity
+            android:name=".CoursesMarks"
+            android:exported="true" />
+        <activity
+            android:name=".CourseMarksDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".AssignedAssessmentsList"
+            android:exported="true" />
+        <activity
+            android:name=".StudentResponses"
+            android:exported="true" />
+        <activity
+            android:name=".StudentProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StudentPersonalMarks"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.handwrittenautograder.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+    </application>
+
+</manifest>

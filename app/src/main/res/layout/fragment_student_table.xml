@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".StatTableFragment">
+    <TextView android:ellipsize="end"
+        android:id="@+id/txtPythonMarks"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_37pxh"
+        android:layout_marginStart="@dimen/_37pxh"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:text="MarkSheet"
+        style="@style/txtPoppinsbold24" tools:text="MarkSheet"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statTable"
+        android:background="@android:color/white"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="80dp">
+
+        <!-- Table Heading -->
+        <TableRow
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total Marks"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Obtained Marks"
+                android:textColor="@android:color/white"
+                android:padding="7sp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mean"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statTable"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/tablestumarksrow" />
+    </TableLayout>
+
+    <!-- RecyclerView for dynamic rows -->
+
+</FrameLayout>

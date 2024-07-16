@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearCourseCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/groupStyleblack_900_26cornerRadius">
+    <ImageView
+        android:id="@+id/imageCourseImage"
+        android:layout_width="@dimen/_61pxh"
+        android:layout_height="@dimen/_55pxh"
+        android:layout_marginStart="@dimen/_12pxh"
+        android:layout_marginTop="@dimen/_17pxv"
+        android:layout_marginBottom="@dimen/_31pxv"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_rectangle36"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtCourseName"
+        style="@style/txtPoppinssemibold14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.01"
+        android:singleLine="true"
+        android:text=""
+        tools:text="" />
+</LinearLayout>
